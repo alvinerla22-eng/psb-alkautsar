@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background: #f0f4f8;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+}
+
+.header-info h1 {
+    font-size: 20px;
+    color: #1e3a8a;
+}
+
+.header-info p {
+    color: #64748b;
+    font-weight: 600;
+}
+
+.btn-keluar {
+    padding: 10px 20px;
+    background: #ef4444;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-keluar:hover { background: #dc2626; }
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    color: #1e40af;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 10px;
+}
+
+.info-row {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.info-row span {
+    width: 140px;
+    color: #64748b;
+}
+
+.info-row strong {
+    color: #1e293b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background: #f8fafc;
+    color: #1e40af;
+    font-weight: 600;
+}
+
+.nilai {
+    font-weight: 700;
+    color: #1e40af;
+}
+
+.lulus {
+    color: #16a34a;
+    font-weight: 600;
+}
+
+.tidak-lulus {
+    color: #ef4444;
+    font-weight: 600;
+}
+
+.rata-rata {
+    margin-top: 15px;
+    text-align: right;
+    font-size: 18px;
+    padding-top: 10px;
+    border-top: 2px solid #e2e8f0;
+    color: #1e40af;
+}
+
+@media (max-width: 600px) {
+    header { flex-direction: column; text-align: center; }
+    .info-row { flex-direction: column; }
+    table { font-size: 14px; }
+    th, td { padding: 10px 8px; }
+}
